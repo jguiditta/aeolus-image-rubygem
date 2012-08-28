@@ -9,6 +9,9 @@ install:
   - bundle install
 script:
   - rake $SUITE
+branches:
+  only:
+    - rpm-task-fix
 notifications:
   irc:
     channels:
